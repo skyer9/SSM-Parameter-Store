@@ -15,6 +15,8 @@
 
 OS 는 Amazon Linux 2023 를 이용합니다.
 
+인스턴스 유형은 t3.small 이상을 권장합니다.
+
 ## PostgreSQL 설치 및 설정
 
 ```bash
