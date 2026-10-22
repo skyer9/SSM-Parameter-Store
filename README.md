@@ -433,3 +433,13 @@ aws ssm get-parameters-by-path --region ap-northeast-2 \
   --query "Parameters[].Name" --output text \
 | xargs aws ssm delete-parameters --region ap-northeast-2 --names
 ```
+
+## 정보를 읽어오는 과정
+
+application.yml 을 확인합니다.
+
+spring.config.import: aws-parameterstore:/timeapp/prod/ 를 확안하고 값을 가져오게 됩니다.
+
+spring.datasource.url 등은 디폴트 스프링 부트 변수명이라 설정없이도 읽어오게 됩니다.
+
+파라미터 스토어에도 동일한 변수명으로 저장했으므로 별도 설정없이 값을 가져오게 됩니다.
