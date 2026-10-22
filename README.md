@@ -73,6 +73,8 @@ psql -h localhost -U timeapp -d timedb -c "SELECT now();"
 
 핵심 규칙: 파라미터 이름 = Spring 프로퍼티 이름
 
+명칭이 동일해서 별도의 추가설정없이 값들이 1:1 매칭이 됩니다.
+
 Spring Cloud AWS는 지정한 경로(prefix) 아래의 파라미터를 읽어서, prefix를 뺀 나머지 이름을 Spring 프로퍼티 키로 사용합니다.
 
 | Parameter Store 이름 | Spring 프로퍼티 |
