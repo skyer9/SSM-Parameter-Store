@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: timeapp
+  config:
+    import: "aws-parameterstore:/timeapp/prod/"
+  cloud:
+    aws:
+      region:
+        static: ap-northeast-2
+
+server:
+  port: 8080
